@@ -5,10 +5,11 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "build": "npx ng build -prod",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "start:app2": "ng serve --app 1 --port 4300"
   },
   "private": true,
   "dependencies": {
@@ -20,7 +21,12 @@
     "@angular/platform-browser": "^4.0.0",
     "@angular/platform-browser-dynamic": "^4.0.0",
     "@angular/router": "^4.0.0",
+    "classlist.js": "^1.1.20150312",
     "core-js": "^2.4.1",
+    "intersection-observer": "^0.7.0",
+    "intl": "^1.2.5",
+    "loadsh": "0.0.4",
+    "lodash-es": "^4.17.15",
     "rxjs": "^5.1.0",
     "zone.js": "^0.8.4"
   },
@@ -35,9 +41,9 @@
     "karma": "~1.4.1",
     "karma-chrome-launcher": "~2.0.0",
     "karma-cli": "~1.0.1",
+    "karma-coverage-istanbul-reporter": "^0.2.0",
     "karma-jasmine": "~1.1.0",
     "karma-jasmine-html-reporter": "^0.2.2",
-    "karma-coverage-istanbul-reporter": "^0.2.0",
     "protractor": "~5.1.0",
     "ts-node": "~2.0.0",
     "tslint": "~4.5.0",

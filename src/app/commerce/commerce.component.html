@@ -1,0 +1,9 @@
+<div>
+    <h1>Commerce</h1>
+    <div class="commerce_root">
+        <h2>{{pageNum}} Page</h2>
+        <button (click)="dec()">-</button><button (click)="inc()">+</button>
+        <button (click)="setPageNum(1)">reset</button>
+        <app-product [products]="products" [mode]="'list'"></app-product>
+    </div>
+</div>
